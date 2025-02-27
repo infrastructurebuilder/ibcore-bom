@@ -50,8 +50,9 @@
 		<ib.core.version>0.30.1-SNAPSHOT</ib.core.version>
 		<ib.site.path>
 			${project.groupId}/${project.artifactId}/${project.version}</ib.site.path>
-		<ibpathref.metadata.model.version>1.0.1-SNAPSHOT</ibpathref.metadata.model.version>
 		<ib.core.executor.model.version>1.0.0</ib.core.executor.model.version>
+		<ibpathref.api.version>0.31.0-SNAPSHOT</ibpathref.api.version>
+		<ibpathref.metadata.model.version>1.0.1-SNAPSHOT</ibpathref.metadata.model.version>
 	</properties>
 
 	<dependencyManagement>
@@ -79,13 +80,13 @@
 			</dependency>
 			<dependency>
 				<groupId>org.infrastructurebuilder.pathref</groupId>
-				<artifactId>ibcore-pathref</artifactId>
-				<version>${ib.core.version}</version>
+				<artifactId>ibpathref-api</artifactId>
+				<version>${ibpathref.api.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.infrastructurebuilder.pathref</groupId>
-				<artifactId>ibcore-pathref</artifactId>
-				<version>${ib.core.version}</version>
+				<artifactId>ibpathref-api</artifactId>
+				<version>${ibpathref.api.version}</version>
 				<type>test-jar</type>
 			</dependency>
 			<dependency>
@@ -122,27 +123,12 @@
 			</dependency>
 			<dependency>
 				<groupId>org.infrastructurebuilder</groupId>
+				<artifactId>ibcore-read-detect-api</artifactId>
+				<version>${ib.core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.infrastructurebuilder</groupId>
 				<artifactId>ibcore-read-detect-base</artifactId>
-				<version>${ib.core.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.infrastructurebuilder</groupId>
-				<artifactId>ibcore-read-detect-url</artifactId>
-				<version>${ib.core.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.infrastructurebuilder</groupId>
-				<artifactId>ibcore-read-detect-urllike</artifactId>
-				<version>${ib.core.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.infrastructurebuilder</groupId>
-				<artifactId>ibcore-read-detect-s3</artifactId>
-				<version>${ib.core.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.infrastructurebuilder</groupId>
-				<artifactId>ibcore-read-detect-path-cache</artifactId>
 				<version>${ib.core.version}</version>
 			</dependency>
 			<dependency>
@@ -151,7 +137,7 @@
 				<version>${ib.core.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.infrastructurebuilder</groupId>
+				<groupId>org.infrastructurebuilder.pathref</groupId>
 				<artifactId>ibpathref-metadata-model</artifactId>
 				<version>${ibpathref.metadata.model.version}</version>
 			</dependency>
@@ -204,32 +190,12 @@
 			</dependency>
 			<dependency>
 				<groupId>org.infrastructurebuilder.pathref</groupId>
-				<artifactId>ibcore-pathref-properties-envpath</artifactId>
-				<version>${ib.core.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.infrastructurebuilder.pathref</groupId>
-				<artifactId>ibcore-pathref-properties-path</artifactId>
-				<version>${ib.core.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.infrastructurebuilder.pathref</groupId>
 				<artifactId>ibcore-pathref-classpath</artifactId>
 				<version>${ib.core.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.infrastructurebuilder.pathref</groupId>
-				<artifactId>ibcore-pathref-setpath</artifactId>
-				<version>${ib.core.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.infrastructurebuilder.pathref</groupId>
 				<artifactId>ibcore-pathref-testingpath</artifactId>
-				<version>${ib.core.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.infrastructurebuilder.pathref</groupId>
-				<artifactId>ibcore-pathref-userhome</artifactId>
 				<version>${ib.core.version}</version>
 			</dependency>
 
