@@ -18,7 +18,7 @@
     @formatter:on
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -52,7 +52,7 @@
     <ib.core.executor.model.version>1.0.0</ib.core.executor.model.version>
     <ibpathref.api.version>0.31.0-SNAPSHOT</ibpathref.api.version>
     <ibpathref.fs.version>${ibpathref.api.version}</ibpathref.fs.version>
-    <ibpathref.metadata.model.version>1.0.1-SNAPSHOT</ibpathref.metadata.model.version>
+    <ibpathref.metadata.model.version>1.0.1</ibpathref.metadata.model.version>
   </properties>
 
   <dependencyManagement>
@@ -91,6 +91,12 @@
       <dependency>
         <groupId>org.infrastructurebuilder.pathref</groupId>
         <artifactId>ibpathref-api</artifactId>
+        <version>${ibpathref.api.version}</version>
+        <type>test-jar</type>
+      </dependency>
+      <dependency>
+        <groupId>org.infrastructurebuilder.pathref</groupId>
+        <artifactId>ibpathref-fs</artifactId>
         <version>${ibpathref.api.version}</version>
         <type>test-jar</type>
       </dependency>
