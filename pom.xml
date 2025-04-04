@@ -52,7 +52,7 @@
     <ib.core.executor.model.version>1.0.0</ib.core.executor.model.version>
     <ibpathref.api.version>0.31.0</ibpathref.api.version>
     <ibpathref.fs.version>${ibpathref.api.version}</ibpathref.fs.version>
-    <ibpathref.metadata.model.version>1.0.0-SNAPSHOT</ibpathref.metadata.model.version>
+    <ibpathref.metadata.model.version>0.0.1-SNAPSHOT</ibpathref.metadata.model.version>
   </properties>
 
   <dependencyManagement>
