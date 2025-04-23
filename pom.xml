@@ -49,9 +49,9 @@
     <git.url>${git.url.base}/${project.artifactId}.git</git.url>
     <ib.core.version>0.30.1-SNAPSHOT</ib.core.version>
     <ib.site.path>${project.groupId}/${project.artifactId}/${project.version}</ib.site.path>
-    <ib.core.executor.model.version>1.0.0</ib.core.executor.model.version>
+    <ib.core.executor.model.version>1.0.3-SNAPSHOT</ib.core.executor.model.version>
     <ib.core.modeled.version>0.0.1</ib.core.modeled.version>
-    <ibpathref.api.version>0.31.1-SNAPSHOT</ibpathref.api.version>
+    <ibpathref.api.version>0.40.0-SNAPSHOT</ibpathref.api.version>
     <ibpathref.fs.version>${ibpathref.api.version}</ibpathref.fs.version>
     <ibpathref.metadata.model.version>0.0.1-SNAPSHOT</ibpathref.metadata.model.version>
   </properties>
@@ -66,6 +66,11 @@
       <dependency>
         <groupId>org.infrastructurebuilder</groupId>
         <artifactId>ibcore-maven-support</artifactId>
+        <version>${ib.core.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infrastructurebuilder</groupId>
+        <artifactId>ibcore-dag</artifactId>
         <version>${ib.core.version}</version>
       </dependency>
       <dependency>
